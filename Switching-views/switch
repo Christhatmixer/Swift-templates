@@ -1,0 +1,4 @@
+@IBAction func Login(_ sender: AnyObject) {
+    let storyboard: UIStoryboard = UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let menu: UIViewController = storyboard.instantiateViewController(withIdentifier: "Menu") as UIViewCOntroller
+    self.present(menu, animated: true, completion: nil
