@@ -1,0 +1,20 @@
+On sending ViewController 
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if case segue.identifier! = "academics"{
+            let controller = segue.destination as! EventTableViewController
+            controller.eventCategory = "academics"
+            print("you chose acadmics")
+}
+
+
+on recieving ViewController
+class EventTableViewController: UITableViewController {
+    
+    var eventCategory: String?
+    
+    
+    //@IBOutlet weak var name: UILabel!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print(eventCategory!)
+        
